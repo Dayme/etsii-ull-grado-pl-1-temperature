@@ -1,0 +1,23 @@
+<html>
+   <head>           
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  <!-- indica el tipo de codificacisn usada en la pagina -->
+      <title>JavaScript Temperature Converter</title> 
+      <link href="global.css" rel="stylesheet" type="text/css">    
+
+     <script type="text/javascript" src="temperature.js"></script>   <!-- aqum se incluye el script con el csdigo javascript -->
+  </head>
+  <body>
+    <h1>Temperature Converter</h1>
+    <table>
+      <tr>
+        <th>Enter  Temperature (examples: 32F, 45C, -2.5f):</th>
+        <td><input id="original" onchange="calculate();"></td>    <!--input define un campo donde se puede entrar informacisn. Le da como id "original"--> 
+      </tr>                                                       <!--onchange ejecuta la funcisn de javascript indicada cuando se produce la entrada de texto-->
+      <tr>
+        <th>Converted Temperature:</th>
+        <td><span class="output" id="converted"></span></td>    <!--span agrupa los elementos del resultado en una clase llamada output y le da el id "converter"--> 
+      </tr>                                                     <!--a istos para luego darles formato en la hoja de estilo-->
+    </table>             
+  </body>
+</html>
+
