@@ -14,11 +14,11 @@ function calculate() {
                              
     if (type == 'c' || type == 'C') {
       result = (num * 9/5)+32;
-      result = result + " F ";  //result contendra ahora una cadena
+      result = result.toFixed(1) + " F ";  //result contendra ahora una cadena
     }
     else {
       result = (num - 32)*5/9;
-      result = result + " C ";
+      result = result.toFixed(1) + " C ";
     }
     converted.innerHTML = result; //innerHTML sirve para "escribir" 
   }                               //dentro del  elemento HTML converted
